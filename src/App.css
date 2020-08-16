@@ -2,37 +2,232 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+#MobileImage{
+  min-height: 80vh;
+  width: 58vmin;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .HomePageImage {
+    animation: App-logo-spin  2s linear;
+    
+  } 
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  .HomePage-Right {
+    animation: App-logo-right  2s linear;
+    position: absolute;
+    transform: translateX(670px);
+  } 
 }
 
-.App-header {
-  background-color: #282c34;
+
+
+.featurecard_leftt {
+  animation: card-left  2s linear;
+  border: none;
+} 
+
+.featurecard_rightt {
+  animation: card-right 2s linear;
+  border: none;
+} 
+
+
+.featurecard_leftt:hover{
+  background-color: rgba(211, 206, 218, 0.87);
+}
+.featurecard_leftt:hover{
+  background-color: rgba(211, 206, 218, 0.87);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .HomePage-Right {
+    animation: App-logo-right  2s linear;
+  } 
+}
+
+
+  @media (prefers-reduced-motion: no-preference ) {
+    .androidimage {
+      animation: android-left 2s linear;
+    } 
+  }
+
+.Homepage-left{
+  margin-top: 2cm;
+  margin-bottom: 0.7cm;
+}
+
+.HomePageImage{
+  
+  max-height: 100vh;
+}
+
+.appbutton{
+  border-radius: 5px;
+  background-color: rgb(155, 113, 194);
+  text-align: center;
+  display: inline;
+  color: white;
+  
+}
+
+.androidimage{
+  max-height: 2cm !important;
+  max-width: 2cm;  
+}
+
+.aboutimage{
+  min-height: auto;  
+  max-width: 100%;
+}
+
+.HomePage-Right{
+  background-color: #fdfdfdc0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1cm;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.About{
+  background-color: rgba(214, 206, 223, 0.74);
+  min-height: 90vh;
+  align-items: center;
+  margin-bottom: 1cm;
+  display: flex;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+
+.Insta{
+  max-width: 1.3cm;
+  min-height: 1.3cm;
+  border-radius: 13px;
+}
+
+.contactUS{
+  text-decoration-style: solid;
+  text-underline-position: auto;
+}
+
+.Helpsection{
+  background-color: #282c34;
+  min-height: 60vh;
+  background-image: url(https://www.anandgroupindia.com/wp-content/uploads/2019/05/contactus.jpg);
+  text-align: right;
+  margin-top: 1cm;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-bottom: 1cm;
+}
+
+.downloadsection{
+  background-color: #000000;
+  height: 35vh;
+  display: flex;
+  background-size: cover;
+  text-align: center;
+  margin-top: 1cm;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-bottom: 1cm;
+  margin-top: 1cm;
+}
+
+
+.featurecard_left:hover{
+  background-color: rgba(211, 206, 218, 0.87);
+} 
+
+.featurecard_right:hover{
+  background-color: rgba(211, 206, 218, 0.87);
+} 
+.featurecard_left{
+  border: none;
+}
+
+.featurecard_right{
+  border: none;
+}
+
+.videoplay{
+  width: 180vmin;
+}
+
+.featureheading{
+  color: #282c34;
+}
+
+.featuretext{
+  color: aqua;
+}
+
+@keyframes card-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes android-left {
+  from {
+    transform: translateX(-1000%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes card-left {
+  0%{
+    transform:translateX(-100%);
+  }
+ 
+  100% {
+    transform:translateX(0);
+  }
+}
+
+
+@keyframes App-logo-right {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(128%);
+  }
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  0%{
+    transform:translateX(-100%);
   }
-  to {
-    transform: rotate(360deg);
+ 
+  100% {
+    transform:translateX(0);
   }
 }
+
+
